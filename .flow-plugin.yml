@@ -1,0 +1,16 @@
+
+name: java_test
+version: 0.0.1
+language: java
+description: Run test use `mvn test`
+public: true
+tags:
+  - java
+  - test
+
+outputs:
+script_path: ./run.sh  
+  
+template: |  
+  
+  
