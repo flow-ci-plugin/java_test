@@ -16,5 +16,10 @@ if [[ ! -f ./pom.xml ]]; then
   flow_terminate 2
 fi
 
-flow_cmd "mvn test -B" --echo --assert
+if [[ ! -f ./mvnw ]]; then
+  flow_cmd "mvn test -B" --echo --assert
+else
+  flow_cmd "./mvnw test -B" --echo --assert
+fi
+
 flow_result $?
