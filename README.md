@@ -1,5 +1,5 @@
 
-# ruby_test Step
+# java_test Step
 Run test use `mvn test`
 
 ### INPUTS
